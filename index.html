@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Survey Form</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div>
+    <div class="survey-header">
+      <h1 class="title">Leisure Time Activities Survey</h1>
+      <p class="description">For discovering what would the most people do in their free time</p>
+    </div>
+  
+    <form id="survey-form">
+      <label for="name" >Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required><br>
+  
+  
+      <label for="email" >Email </label>
+      <input id="email" type="email" placeholder="Enter your email" required><br>
+  
+  
+      <label for="number" >Age</label>
+      <input id="number" type="number" min="1" max="110" placeholder="Age"><br>
+  
+  
+      <label for="dropdown">What is your current role?</label>
+      <select id="dropdown">
+        <option disabled selected>Select current role</option>
+        <option value="student">Student</option>
+        <option value="full time job">Full Time Job</option>
+        <option value="part time job">Part Time Job</option>
+        <option value="housekeeper">House Keeper</option>
+        <option value="military">Military</option>
+        <option value="other">Other</option>
+      </select>
+  
+  
+  
+      <legend class="hours-question">How many hours of free time do you have in a day?</legend>
+  
+      <input id="under-2" type="radio" value="under-2" name="free-time-hours">
+      <label for="under 2">under 2 hours</label><br>
+      <input id="2-4" type="radio" value="2-4" name="free-time-hours">
+      <label for="2-4">2 ~ 4 hours</label><br>
+      <input id="4-6" type="radio" value="4-6" name="free-time-hours">
+      <label for="4-6">4 ~ 6 hours</label><br>
+      <input id="6-8" type="radio" value="6-8" name="free-time-hours">
+      <label for="6-8">6 ~ 8 hours</label><br>
+      <input id="over-8" type="radio" value="over 8" name="free-time-hours">
+      <label for="over-8">over 8 hours</label>
+  
+  
+  
+  
+      <legend class="activities-question">What you usually do in your free time?</legend>
+  
+      <input type="checkbox" value="reading" name="activities">
+      <label>Reading</label><br>
+      <input type="checkbox" value="painting" name="activities">
+      <label>Painting</label><br>
+      <input type="checkbox" value="listening to music" name="activities">
+      <label>Listening to music</label><br>
+      <input type="checkbox" value="Doing exercise" name="activities">
+      <label>Doing exercise</label><br>
+      <input type="checkbox" value="cooking or baking" name="activities">
+      <label>Cooking or Baking</label><br>
+      <input type="checkbox" value="playing video games" name="activities">
+      <label>Playing video games</label><br>
+      <input type="checkbox" value="outdoor activities" name="activities">
+      <label>Outdoor activities</label><br>
+  
+  
+      <div class="comment">What is your suggestion about this survey?<br>
+        <textarea placeholder="Please leave your comments here"></textarea>
+      </div>
+  
+  
+      <input class="submit" type="submit">
+    </form>
+  </div>
+</body>
+</html>
